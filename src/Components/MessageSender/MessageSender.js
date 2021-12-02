@@ -11,7 +11,7 @@ function MessageSender() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+
     //Clever db stuff = Clear Input
     setInput("");
     setImageURL("");
