@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Header.css";
 import SearchIcon from "@material-ui/icons/Search";
 import HomeIcon from "@material-ui/icons/Home";
@@ -15,7 +15,7 @@ import { useStateValue } from "../../StateProvider";
 
 function Header() {
   const [{ user }, dispatch] = useStateValue();
-
+ 
   return (
     <div className="header">
       <div className="header__left">
